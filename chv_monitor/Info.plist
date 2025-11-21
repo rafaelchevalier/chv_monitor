@@ -63,9 +63,9 @@
 	<key>UIFileSharingEnabled</key>
 	<false/>
 	
-	<!-- Versão mínima iOS 18 -->
+	<!-- Versão mínima iOS 17 -->
 	<key>MinimumOSVersion</key>
-	<string>18.0</string>
+	<string>17.0</string>
 </dict>
 </plist>
 

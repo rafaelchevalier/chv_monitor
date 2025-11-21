@@ -18,7 +18,7 @@ jobs:
     - name: Setup Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '16.0'
+        xcode-version: '16.4'
     
     - name: Show Xcode version
       run: xcodebuild -version
@@ -43,6 +43,9 @@ jobs:
           -scheme chv_monitor \
           -list || echo "Erro na validação - continuando mesmo assim"
     
+    - name: List available SDKs
+      run: xcodebuild -showsdks
+    
     - name: Build project
       run: |
         xcodebuild -project chv_monitor.xcodeproj \
@@ -50,6 +53,7 @@ jobs:
           -configuration Debug \
           -sdk iphoneos \
           -destination 'generic/platform=iOS' \
+          IPHONEOS_DEPLOYMENT_TARGET=17.0 \
           clean build \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
@@ -63,6 +67,7 @@ jobs:
           -archivePath build/chv_monitor.xcarchive \
           -sdk iphoneos \
           -destination 'generic/platform=iOS' \
+          IPHONEOS_DEPLOYMENT_TARGET=17.0 \
           archive \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
