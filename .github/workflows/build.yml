@@ -26,6 +26,12 @@ jobs:
     - name: Show Swift version
       run: swift --version
     
+    - name: Validate project
+      run: |
+        xcodebuild -project chv_monitor.xcodeproj \
+          -scheme chv_monitor \
+          -list || true
+    
     - name: Build project
       run: |
         xcodebuild -project chv_monitor.xcodeproj \
