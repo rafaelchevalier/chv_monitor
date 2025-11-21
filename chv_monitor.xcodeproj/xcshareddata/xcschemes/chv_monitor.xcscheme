@@ -45,7 +45,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1B2C3D4E5F6A7B8C9D0E205"
+            BlueprintIdentifier = "1A2B3C4D5E6F7A8B9C0D1E303"
             BuildableName = "chv_monitor.app"
             BlueprintName = "chv_monitor"
             ReferencedContainer = "container:chv_monitor.xcodeproj">
@@ -62,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1B2C3D4E5F6A7B8C9D0E205"
+            BlueprintIdentifier = "1A2B3C4D5E6F7A8B9C0D1E303"
             BuildableName = "chv_monitor.app"
             BlueprintName = "chv_monitor"
             ReferencedContainer = "container:chv_monitor.xcodeproj">
