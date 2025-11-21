@@ -22,7 +22,9 @@ class SettingsObserver {
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            self?.handleSettingsChange()
+            Task { @MainActor in
+                self?.handleSettingsChange()
+            }
         }
     }
     

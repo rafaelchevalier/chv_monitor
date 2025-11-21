@@ -60,7 +60,14 @@ final class AudioRecorderManager: NSObject, @unchecked Sendable {
         guard !isRecording else { return }
         
         // Verificar permissão
-        guard AVAudioSession.sharedInstance().recordPermission == .granted else {
+        let permission: AVAudioSession.RecordPermission
+        if #available(iOS 17.0, *) {
+            permission = AVAudioApplication.recordPermission
+        } else {
+            permission = AVAudioSession.sharedInstance().recordPermission
+        }
+        
+        guard permission == .granted else {
             print("Permissão de microfone não concedida")
             return
         }

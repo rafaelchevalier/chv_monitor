@@ -65,11 +65,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func requestMicrophonePermission() {
-        AVAudioSession.sharedInstance().requestRecordPermission { granted in
-            if granted {
-                print("Permissão de microfone concedida")
-            } else {
-                print("Permissão de microfone negada")
+        if #available(iOS 17.0, *) {
+            Task {
+                let granted = await AVAudioApplication.requestRecordPermission()
+                if granted {
+                    print("Permissão de microfone concedida")
+                } else {
+                    print("Permissão de microfone negada")
+                }
+            }
+        } else {
+            AVAudioSession.sharedInstance().requestRecordPermission { granted in
+                if granted {
+                    print("Permissão de microfone concedida")
+                } else {
+                    print("Permissão de microfone negada")
+                }
             }
         }
     }
