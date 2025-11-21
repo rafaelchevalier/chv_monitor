@@ -3,8 +3,6 @@ name: Build iOS App
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -20,46 +18,7 @@ jobs:
       with:
         xcode-version: '16.4'
     
-    - name: Show Xcode version
-      run: xcodebuild -version
-    
-    - name: Show Swift version
-      run: swift --version
-    
-    - name: Clean derived data
-      run: |
-        rm -rf ~/Library/Developer/Xcode/DerivedData/*
-    
-    - name: Validate project structure
-      run: |
-        echo "Verificando estrutura do projeto..."
-        ls -la chv_monitor.xcodeproj/
-        echo "Verificando project.pbxproj..."
-        head -20 chv_monitor.xcodeproj/project.pbxproj
-    
-    - name: Validate project
-      run: |
-        xcodebuild -project chv_monitor.xcodeproj \
-          -scheme chv_monitor \
-          -list || echo "Erro na validação - continuando mesmo assim"
-    
-    - name: List available SDKs
-      run: xcodebuild -showsdks
-    
-    - name: Build project
-      run: |
-        xcodebuild -project chv_monitor.xcodeproj \
-          -scheme chv_monitor \
-          -configuration Debug \
-          -sdk iphoneos \
-          -destination 'generic/platform=iOS' \
-          IPHONEOS_DEPLOYMENT_TARGET=17.0 \
-          clean build \
-          CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGNING_ALLOWED=NO
-    
-    - name: Archive
+    - name: Build and Archive
       run: |
         xcodebuild -project chv_monitor.xcodeproj \
           -scheme chv_monitor \
@@ -67,8 +26,8 @@ jobs:
           -archivePath build/chv_monitor.xcarchive \
           -sdk iphoneos \
           -destination 'generic/platform=iOS' \
-          IPHONEOS_DEPLOYMENT_TARGET=17.0 \
-          archive \
+          IPHONEOS_DEPLOYMENT_TARGET=18.0 \
+          clean archive \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
           CODE_SIGNING_ALLOWED=NO
@@ -80,4 +39,3 @@ jobs:
         name: xcarchive
         path: build/chv_monitor.xcarchive
         retention-days: 7
-
