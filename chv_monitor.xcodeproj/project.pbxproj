@@ -3,30 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AppDelegate.swift /* AppDelegate.swift */ = {isa = PBXBuildFile; fileRef = AppDelegate.swift /* AppDelegate.swift */; };
-		ViewController.swift /* ViewController.swift */ = {isa = PBXBuildFile; fileRef = ViewController.swift /* ViewController.swift */; };
-		AudioRecorderManager.swift /* AudioRecorderManager.swift */ = {isa = PBXBuildFile; fileRef = AudioRecorderManager.swift /* AudioRecorderManager.swift */; };
-		FileManagerHelper.swift /* FileManagerHelper.swift */ = {isa = PBXBuildFile; fileRef = FileManagerHelper.swift /* FileManagerHelper.swift */; };
-		SettingsObserver.swift /* SettingsObserver.swift */ = {isa = PBXBuildFile; fileRef = SettingsObserver.swift /* SettingsObserver.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F3 /* AppDelegate.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F5 /* ViewController.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F6 /* AudioRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F7 /* AudioRecorderManager.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F8 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F9 /* FileManagerHelper.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1FA /* SettingsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1FB /* SettingsObserver.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1FC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1FD /* Info.plist */; };
+		A1B2C3D4E5F6A7B8C9D0E1FE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1FF /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		chv_monitor.app /* chv_monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chv_monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AppDelegate.swift /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ViewController.swift /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AudioRecorderManager.swift /* AudioRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderManager.swift; sourceTree = "<group>"; };
-		FileManagerHelper.swift /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
-		SettingsObserver.swift /* SettingsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObserver.swift; sourceTree = "<group>"; };
-		Info.plist /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		Settings.bundle /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Settings.bundle; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E200 /* chv_monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chv_monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F6A7B8C9D0E1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F7 /* AudioRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderManager.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F9 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1FB /* SettingsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObserver.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1FF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		PBXFrameworksBuildPhase /* Frameworks */ = {
+		A1B2C3D4E5F6A7B8C9D0E201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,38 +38,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		chv_monitor = {
+		A1B2C3D4E5F6A7B8C9D0E202 /* chv_monitor */ = {
 			isa = PBXGroup;
 			children = (
-				AppDelegate.swift,
-				ViewController.swift,
-				AudioRecorderManager.swift,
-				FileManagerHelper.swift,
-				SettingsObserver.swift,
-				Info.plist,
-				Settings.bundle,
+				A1B2C3D4E5F6A7B8C9D0E1F3 /* AppDelegate.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F5 /* ViewController.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F7 /* AudioRecorderManager.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F9 /* FileManagerHelper.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1FB /* SettingsObserver.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1FD /* Info.plist */,
+				A1B2C3D4E5F6A7B8C9D0E1FF /* Settings.bundle */,
 			);
 			path = chv_monitor;
 			sourceTree = "<group>";
 		};
-		Products = {
+		A1B2C3D4E5F6A7B8C9D0E203 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				chv_monitor.app,
+				A1B2C3D4E5F6A7B8C9D0E200 /* chv_monitor.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F6A7B8C9D0E204 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F6A7B8C9D0E202 /* chv_monitor */,
+				A1B2C3D4E5F6A7B8C9D0E203 /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		chv_monitor = {
+		A1B2C3D4E5F6A7B8C9D0E205 /* chv_monitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BuildConfigurationList;
+			buildConfigurationList = A1B2C3D4E5F6A7B8C9D0E206 /* Build configuration list for PBXNativeTarget "chv_monitor" */;
 			buildPhases = (
-				PBXResourcesBuildPhase /* Resources */,
-				PBXSourcesBuildPhase /* Sources */,
-				PBXFrameworksBuildPhase /* Frameworks */,
+				A1B2C3D4E5F6A7B8C9D0E207 /* Resources */,
+				A1B2C3D4E5F6A7B8C9D0E208 /* Sources */,
+				A1B2C3D4E5F6A7B8C9D0E201 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -75,20 +85,20 @@
 			);
 			name = chv_monitor;
 			productName = chv_monitor;
-			productReference = chv_monitor.app;
+			productReference = A1B2C3D4E5F6A7B8C9D0E200 /* chv_monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		Project = {
+		A1B2C3D4E5F6A7B8C9D0E209 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1800;
 				LastUpgradeCheck = 1800;
 			};
-			buildConfigurationList = BuildConfigurationList;
+			buildConfigurationList = A1B2C3D4E5F6A7B8C9D0E20A /* Build configuration list for PBXProject "Project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -96,43 +106,45 @@
 				en,
 				Base,
 			);
-			mainGroup = chv_monitor;
-			productRefGroup = Products;
+			mainGroup = A1B2C3D4E5F6A7B8C9D0E204 /*  */;
+			productRefGroup = A1B2C3D4E5F6A7B8C9D0E203 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				chv_monitor,
+				A1B2C3D4E5F6A7B8C9D0E205 /* chv_monitor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		PBXResourcesBuildPhase /* Resources */ = {
+		A1B2C3D4E5F6A7B8C9D0E207 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B2C3D4E5F6A7B8C9D0E1FC /* Info.plist in Resources */,
+				A1B2C3D4E5F6A7B8C9D0E1FE /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		PBXSourcesBuildPhase /* Sources */ = {
+		A1B2C3D4E5F6A7B8C9D0E208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AppDelegate.swift /* AppDelegate.swift in Sources */,
-				ViewController.swift /* ViewController.swift in Sources */,
-				AudioRecorderManager.swift /* AudioRecorderManager.swift in Sources */,
-				FileManagerHelper.swift /* FileManagerHelper.swift in Sources */,
-				SettingsObserver.swift /* SettingsObserver.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F4 /* ViewController.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F6 /* AudioRecorderManager.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F8 /* FileManagerHelper.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1FA /* SettingsObserver.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		Debug = {
+		A1B2C3D4E5F6A7B8C9D0E20B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		Release = {
+		A1B2C3D4E5F6A7B8C9D0E20C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +263,7 @@
 			};
 			name = Release;
 		};
-		chv_monitor_Debug = {
+		A1B2C3D4E5F6A7B8C9D0E20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -278,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		chv_monitor_Release = {
+		A1B2C3D4E5F6A7B8C9D0E20E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,26 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BuildConfigurationList = {
+		A1B2C3D4E5F6A7B8C9D0E20A /* Build configuration list for PBXProject "Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				Debug,
-				Release,
+				A1B2C3D4E5F6A7B8C9D0E20B /* Debug */,
+				A1B2C3D4E5F6A7B8C9D0E20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		chv_monitor_BuildConfigurationList = {
+		A1B2C3D4E5F6A7B8C9D0E206 /* Build configuration list for PBXNativeTarget "chv_monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				chv_monitor_Debug,
-				chv_monitor_Release,
+				A1B2C3D4E5F6A7B8C9D0E20D /* Debug */,
+				A1B2C3D4E5F6A7B8C9D0E20E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = Project /* Project object */;
+	rootObject = A1B2C3D4E5F6A7B8C9D0E209 /* Project object */;
 }
-
