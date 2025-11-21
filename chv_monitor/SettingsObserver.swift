@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SettingsObserver {
+final class SettingsObserver: @unchecked Sendable {
     
     nonisolated(unsafe) static let shared = SettingsObserver()
     private var observer: NSObjectProtocol?
@@ -22,7 +22,7 @@ class SettingsObserver {
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
                 self?.handleSettingsChange()
             }
         }
