@@ -26,11 +26,15 @@ jobs:
     - name: Show Swift version
       run: swift --version
     
+    - name: Clean derived data
+      run: |
+        rm -rf ~/Library/Developer/Xcode/DerivedData/*
+    
     - name: Validate project
       run: |
         xcodebuild -project chv_monitor.xcodeproj \
           -scheme chv_monitor \
-          -list || true
+          -list
     
     - name: Build project
       run: |
