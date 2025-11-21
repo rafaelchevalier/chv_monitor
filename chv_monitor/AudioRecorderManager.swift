@@ -8,7 +8,7 @@
 import AVFoundation
 import Foundation
 
-class AudioRecorderManager: NSObject {
+final class AudioRecorderManager: NSObject, @unchecked Sendable {
     
     static let shared = AudioRecorderManager()
     

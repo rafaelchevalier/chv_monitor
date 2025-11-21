@@ -9,7 +9,7 @@ import Foundation
 
 class SettingsObserver {
     
-    static let shared = SettingsObserver()
+    nonisolated(unsafe) static let shared = SettingsObserver()
     private var observer: NSObjectProtocol?
     
     private init() {
@@ -26,6 +26,7 @@ class SettingsObserver {
         }
     }
     
+    @MainActor
     private func handleSettingsChange() {
         let isEnabled = UserDefaults.standard.bool(forKey: "recording_enabled")
         let audioRecorder = AudioRecorderManager.shared
@@ -44,6 +45,7 @@ class SettingsObserver {
         updateSettingsDisplay()
     }
     
+    @MainActor
     private func updateSettingsDisplay() {
         let audioRecorder = AudioRecorderManager.shared
         let isRecording = audioRecorder.isCurrentlyRecording()
