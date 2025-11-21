@@ -9,8 +9,10 @@ O erro `-[PBXFileReference buildPhase]: unrecognized selector` ocorre quando o X
 1. ✅ **objectVersion corrigido**: De 56 para 54 (versão suportada)
 2. ✅ **IDs únicos adicionados**: Todos os objetos agora têm IDs únicos de 24 caracteres hexadecimais
 3. ✅ **Info.plist removido de Resources**: Info.plist não deve estar em PBXResourcesBuildPhase
-4. ✅ **Arquivo de scheme criado**: Scheme necessário para o build
-5. ✅ **Estrutura completa**: Todas as seções necessárias foram adicionadas
+4. ✅ **Settings.bundle removido temporariamente**: Removido do build para testar se era a causa do erro
+5. ✅ **Arquivo de scheme criado**: Scheme necessário para o build
+6. ✅ **Estrutura completa**: Todas as seções necessárias foram adicionadas
+7. ✅ **Xcode versão forçada**: Forçado uso do Xcode 15.4 (versão estável) em vez de 26.1 RC
 
 ## Se o Erro Persistir
 
