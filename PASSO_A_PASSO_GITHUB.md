@@ -231,22 +231,29 @@ Quando aparecer ✅ (sucesso):
 
 ### Para instalar no iPhone:
 
-Você precisa de **um destes**:
+**📱 Não tem Mac? Veja o guia completo: `SOLUCOES_SEM_MAC.md`**
 
-1. **Mac com Xcode**:
+**Opções disponíveis**:
+
+1. **Mac com Xcode** (se tiver):
    - Abra o `.xcarchive` no Xcode
    - Exporte como `.ipa`
    - Assine com seu certificado
    - Instale via sideloading
 
-2. **Serviço de assinatura**:
-   - Alguns serviços fazem isso por você
-   - Mas custam dinheiro
+2. **AppDB / Signulous** (Recomendado - sem Mac):
+   - Serviço online pago (~$15-20/ano)
+   - Funciona direto no iPhone
+   - Veja `SOLUCOES_SEM_MAC.md` para detalhes
 
-3. **Compilar uma vez localmente**:
-   - Use Mac emprestado/virtual
-   - Compile e assine
-   - Depois só reinstala quando necessário
+3. **AltStore + Windows** (Gratuito):
+   - Precisa de PC Windows
+   - Instala direto no iPhone
+   - Veja `SOLUCOES_SEM_MAC.md` para detalhes
+
+4. **Pedir ajuda** (se conhecer alguém com Mac):
+   - Peça para converter `.xcarchive` para `.ipa`
+   - Depois instale via AltStore ou serviço online
 
 ---
 
